@@ -1,9 +1,9 @@
 // 1940. 주몽
 #include<iostream>
 #include<algorithm>
+#include<vector>
 using namespace std;
 
-int material[100002];
 
 int main() {
   ios::sync_with_stdio(0);
@@ -11,11 +11,12 @@ int main() {
   int materialCnt, madeNumber;
   cin >> materialCnt >> madeNumber;
 
+  vector<int> material(materialCnt);
   for (int i = 0; i < materialCnt; i++) {
     cin >> material[i];
   }
 
-  sort(material, material + materialCnt);
+  sort(material.begin(), material.end());
 
   int st = 0;
   int en = materialCnt - 1;
