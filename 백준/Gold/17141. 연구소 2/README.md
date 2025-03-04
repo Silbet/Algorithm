@@ -1,4 +1,5 @@
 # [Gold IV] 연구소 2 - 17141 
+> [복습 필요] 조합 알고리즘인 next_permutation 사용법 구글링 후 문제 해결
 
 [문제 링크](https://www.acmicpc.net/problem/17141) 
 
