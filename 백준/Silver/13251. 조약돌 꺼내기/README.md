@@ -1,4 +1,5 @@
 # [Silver III] 조약돌 꺼내기 - 13251 
+> 소숫점 계산, 출력 관련 정리 필요
 
 [문제 링크](https://www.acmicpc.net/problem/13251) 
 
