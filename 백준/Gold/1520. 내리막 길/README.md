@@ -1,4 +1,5 @@
 # [Gold III] 내리막 길 - 1520 
+> 오래 걸림
 
 [문제 링크](https://www.acmicpc.net/problem/1520) 
 
