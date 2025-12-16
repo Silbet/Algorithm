@@ -1,4 +1,4 @@
 # Algorithm
 This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
 
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=Silbet)](https://solved.ac/Silbet/)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gs1237)](https://solved.ac/gs1237/)
