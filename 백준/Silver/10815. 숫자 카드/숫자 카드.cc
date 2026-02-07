@@ -1,12 +1,9 @@
-// 10815. 숫자 카드
+// 10815. 숫자 카드(복습)
 #include<iostream>
+#include<algorithm>
 using namespace std;
 
-bool have_card[20000002];
-
-int GetIndex(int card_number) {
-  return card_number + 10000000;
-}
+int numberCard[500005];
 
 int main() {
   ios::sync_with_stdio(0);
@@ -16,21 +13,20 @@ int main() {
   cin >> n;
 
   for (int i = 0; i < n; i++) {
-    int card_number;
-    cin >> card_number;
-
-    int card_index = GetIndex(card_number);
-    have_card[card_index] = 1;
+    cin >> numberCard[i];
   }
+
+  sort(numberCard, numberCard + n);
 
   int m;
   cin >> m;
 
   for (int i = 0; i < m; i++) {
-    int card_number;
-    cin >> card_number;
+    int target;
+    cin >> target;
 
-    int card_index = GetIndex(card_number);
-    cout << have_card[card_index] << " ";
+    int result = binary_search(numberCard, numberCard + n, target);
+    
+    cout << result << " ";
   }
 }
