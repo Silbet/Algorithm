@@ -1,10 +1,9 @@
-// 29615. 알파빌과 베타빌
+// 29615. 알파빌과 베타빌 (복습)
 #include<iostream>
 using namespace std;
 
-int waiting[1002];
-int waitingFriend[1002];
-
+int waitingList[1002];
+bool friendList[1002];
 
 int main() {
   ios::sync_with_stdio(0);
@@ -14,26 +13,18 @@ int main() {
   cin >> n >> m;
 
   for (int i = 0; i < n; i++) {
-    cin >> waiting[i];
+    cin >> waitingList[i];
   }
-
   for (int i = 0; i < m; i++) {
-    cin >> waitingFriend[i];
+    int tmp;
+    cin >> tmp;
+    friendList[tmp] = 1;
   }
 
+  // 친구들을 위한 대기명단 바꾸는 횟수 탐색
   int count = 0;
   for (int i = 0; i < m; i++) {
-    bool flag = 0;
-
-    for (int j = 0; j < m; j++) {
-      if (waiting[i] == waitingFriend[j]) {
-        flag = 1;
-        break;
-      }
-    }
-
-    if (flag == 0) count++;
+    if (!friendList[waitingList[i]]) count++;
   }
-
   cout << count;
 }
